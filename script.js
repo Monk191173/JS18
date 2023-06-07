@@ -49,7 +49,7 @@ console.log('------End of Filter------');
 /*---------------------------------------------------6 */
 
 let arrRed = [1, 2, 5, 0, 4, 5, 6];
-console.log('Mass before zero', arrRed);
+console.log('Mass before zero', `${arrRed}`);
 const suma = arrRed.reduce(function (start, val, ind, arr) {
     if (val == 0) arr.splice(arr.indexOf(0), arr.length - arr.indexOf(0))
     return start += val
@@ -57,7 +57,7 @@ const suma = arrRed.reduce(function (start, val, ind, arr) {
 console.log('Summ before zero is :', suma);
 /*********/
 let arrRed10 = [1, 2, 3, 0, 4, 5, 6];
-console.log('Mass for summing more 10', arrRed10);
+console.log('Mass for summing more 10', `${arrRed10}`);
 const suma10 = arrRed10.reduce(function (start, val, ind, arr) {
     start += val;
     if (start > 10) {
